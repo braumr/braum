@@ -1,16 +1,173 @@
 <html>
 <head>
-    <title>[Exam Code] Braum Russell Exam 2 Mis 3033</title>
+    <title>[RXIP] Braum Russell Exam 2 Mis 3033</title>
+    <style>
+        #main {
+            width: 800px;
+            display:flex;
+            flex-direction:column;
+            margin-right:auto;
+            margin-left:auto;
+           
+        }
+
+        .title {
+            text-transform: uppercase;
+            background-color: lightskyblue;
+            border-radius: 5px;
+        }
+        #name {
+            width: 200px;
+            height: 70px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            justify-content:center;
+        }
+        #examcode {
+            width: 200px;
+            height: 70px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #two {
+            height: 80px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+
+        }
+        #three {
+            display: flex;
+            flex-direction: row;
+            
+        }
+        #aboutme {
+            width: 510px;
+            height: 110px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+        #achievements {
+            width: 510px;
+            height: 160px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+            
+        }
+        #recentnews {
+            width: 280px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+        }
+        #four {
+            height: 60px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightgrey;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:end;
+        }
+    </style>
 </head>
 
 <body>
-    <img src="static/head1 (2).png" style="height:100px;" />
-    <img src="static/head2 (2).png" style="height:100px;" />
-    <img src="static/linkedin (1).png" style="height:100px;" />
-    <img src="static/html.svg" style="height:100px;" />
-    <img src="static/css.svg" style="height:100px;" />
-    <img src="static/javascript.svg" style="height:100px;" />
-    <img src="static/sqlite.svg" style="height:100px;" />
-    <img src="static/logo.svg" style="height:100px;" />
+    <div id="main">
+
+
+        <div style="display: flex; flex-direction: row; ">
+            <div id="name">MIS 3033 Exam 2<br />Braum Russell</div>
+            <div id="examcode">RXIP</div>
+        </div>
+
+        <div id="two">
+            <div><img src="static/head1 (2).png" style="height:60px;margin-left:7px;border-radius:50%;" /></div>
+            <div style="margin-left:7px; margin-right:7px;"  >Braum Russell<br />MIS Student</div>
+            <div><a href="https://www.linkedin.com/"><img src="static/linkedin (1).png" style="width:30px; margin-left:7px;" /></a></div>
+
+        </div>
+
+        <div id="three">
+            <div>
+                <div id="aboutme">
+                    <span class="title">ABOUT ME:</span><br />
+                    I am a MIS student. I like programming and I am good at C#. I leaned Entity Framework for Database Manipulations. I know HTML, CSS and I started to learn JavaScript. It is fun. Later I will learn C# .NET MVC Dynamic Web App development and Web API development.
+                </div>
+                <div id="achievements">
+                   
+                    <span class="title">ACHIEVEMENTS</span>
+                    <div style="display:flex;flex-direction:row;justify-content:center;">
+
+                        <div style="border-style: solid; border-width: 1px; border-color: lightgrey; border-radius: 5px;display:flex;flex-direction:column; justify-content:center;">
+                            <img src="static/html.svg" style="height:100px;" />
+                            <div style="margin-left:auto;margin-right:auto;">HTML</div>
+                        </div>
+
+                        <div style="border-style: solid; border-width: 1px; border-color: lightgrey; border-radius: 5px;display:flex;flex-direction:column; justify-content:center;">
+                            <img src="static/css.svg" style="height:100px;" />
+                            <div style="margin-left:auto;margin-right:auto;">CSS</div>
+                        </div>
+
+                        <div style="border-style: solid; border-width: 1px; border-color: lightgrey; border-radius: 5px;display:flex;flex-direction:column; justify-content:center;">
+                            <img src="static/javascript.svg" style="height:100px;" />
+                            <div style="margin-left:auto;margin-right:auto;">JavaScript</div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="recentnews">
+                <span class="title">RECENT NEWS</span>
+                <ul>
+                    <li>Learned C#</li>
+                    <li>Learned Entity Framework</li>
+                    <li>Learned <img src="static/sqlite.svg" style="height:40px;" /></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="four">
+            <span style="font-weight:bold;font-size:20px;color:grey;">Developed by Braum Russell here for MIS 3033 Exam 2</span>
+            <img src="static/logo.svg" style="height:50px;" />
+        </div>
+        
+
+
+
+
+
+
+    </div>
 </body>
 </html>
+
+
+
+
+
