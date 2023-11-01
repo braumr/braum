@@ -1,4 +1,7 @@
 <html>
+
+
+
 <head>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -74,17 +77,20 @@
 
                 let params;
 
-                params = {
+                params =
+                {
                     type: 'bar',
                     data: {
-                        labels: rj.map(x=>x.st),
+                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
                         datasets: [
                             {
-                                label: 'Population of States',
-                                data: rj.map(x=>x.p),
+                                label: '# of Votes',
+                                data: [12, 19, 3, 5, 2, 3]
                             }]
-                    }
+                   }
                 };
+
+              
 
                 let c1 = document.querySelector("#c1");
 
@@ -131,11 +137,28 @@
                     sort: true,
                     width: 800,
                 };
-
                 let table = document.querySelector("#table");
 
-                 grid = new gridjs.Grid(params);
+                grid = new gridjs.Grid(params);
                 grid.render(table);
+
+            params=    {
+                type: 'bar',
+                   data: {
+                       labels: rj.map(x=>x.st),
+                       datasets: [
+                           {
+                               label: 'Population of States',
+                               data: rj.map(x=>x.p),
+                           }]
+                    }
+                };
+
+                let c1 = document.querySelector("#c1");
+
+                let chart1 = new Chart(c1, params);
+
+               
 
 
                 params = {
