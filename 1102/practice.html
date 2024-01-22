@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>B RUSS</title>
+</head>
+
+
+<style>
+    .extension
+    {
+        background-color:grey;
+        text-align:center;
+        font-size:25px;
+    }
+    .blue
+    {
+        text-align:left;
+        font-size:20px;
+        background-color:crimson;
+    }
+    .hello
+    {
+        text-align:right;
+
+    }
+</style>
+
+
+<body class="extension">
+
+    <span class="extension">Welcome to the Braums Page. You Like...? Let me know below;)</span>
+    <br /><br /><br /><br /><br />
+
+    <button class="blue" id="BUMMF">CLICK THIS IF UR A BUM</button>
+    <script>
+        var bumbutton = document.getElementById("BUMMF");
+        bumbutton.addEventListener("click", function () { dateResult.textContent = "You are a MF Bum Ass. Go to sleep loser" });
+    </script>
+
+
+    <button class="blue" id="dateButton">Current Date?</button>
+    <p id="dateResult"></p>
+
+    <script>
+        // Get a reference to the button and the paragraph where the date will be displayed
+        var dateButton = document.getElementById("dateButton");
+        var dateResult = document.getElementById("dateResult");
+
+        // Add an event listener to the button
+        dateButton.addEventListener("click", function () {
+            // Create a new Date object to get the current date and time
+            var currentDate = new Date();
+            var dateString = currentDate.toDateString();
+            dateResult.textContent = "Current Date: " + dateString;
+        });
+    </script>
+
+
+
+
+
+    <button class="blue" id="ipButton">Surprise Mystery Box???</button>
+    <p id="ipResult"></p>
+    <img id="white" src="Guess What?" style="display; none;" />
+
+    <script>
+        var ipButton = document.getElementById("ipButton");
+        var ipResult = document.getElementById("ipResult");
+
+        ipButton.addEventListener("click", function () {
+            fetch('https://api.ipify.org?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    ipResult.textContent = "Your IP Address: " + data.ip;
+                    var img = document.getElementById("white");
+                    img.src = "white.jpg";
+                })
+                .catch(error => {
+                    ipResult.textContent = "Error: Unable to retrieve IP address.";
+                });
+        });
+    </script>
+</body>
+</html>
