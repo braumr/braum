@@ -1,0 +1,86 @@
+﻿<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color:dimgray; /* Adjust background color as needed */
+            color: #333; /* Adjust text color as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #welcome-container {
+            text-align:center;
+        }
+
+        #b-russ {
+            font-size: 3em; /* Adjust font size as needed */
+            font-weight: bold;
+            color: #4CAF50; /* Adjust B Russ text color as needed */
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+            #b-russ:hover {
+                transform: scale(1.1);
+            }
+
+        /* Add more styles or elements as needed */
+
+        .ticker-text {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.5em;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            animation: ticker 10s linear infinite;
+        }
+
+            .ticker-text::before,
+            .ticker-text::after {
+                content: ' ★ ';
+                color: #ffcc00; /* Adjust star color as needed */
+            }
+
+        @keyframes ticker {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome-container">
+        <h1 id="b-russ">Hey! I'm Braum</h1>
+        <!-- Add more cool things or elements here -->
+    </div>
+
+
+    <ul id="b-russ" style="width:600px">
+        <li id="b-russ">
+            <a class="nav-link active" href="~/home/index" target="_self">Order Manage</a>
+        </li>
+
+        <li class="b-russ">
+            <a class="nav-link" href="~/home/chart" target="_self">Summary</a>
+        </li>
+    </ul>
+    <div class="ticker-text">Braum Russell</div>
+
+
+
+
+
+</body>
+</html>
